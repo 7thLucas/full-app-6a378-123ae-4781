@@ -1,0 +1,68 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(4, 1fr); }
+  .mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="flex flex-col w-full h-full p-12 gap-6">
+
+    <!-- Header -->
+    <div class="flex flex-col gap-2">
+      <div class="flex items-center gap-3">
+        <div class="w-1 h-7 rounded-full" style="background: linear-gradient(180deg, #10B981, #6366F1);"></div>
+        <span class="text-slate-400 text-xs font-bold tracking-widest uppercase">Benefits</span>
+      </div>
+      <h2 class="text-slate-900 font-bold" style="font-size: 1.75rem;">Value that compounds as your community grows</h2>
+    </div>
+
+    <!-- Metric cards -->
+    <div class="sl-grid grid gap-4">
+
+      <div class="flex flex-col gap-2 rounded-2xl p-5 border" style="background: #EEF2FF; border-color: #C7D2FE;">
+        <span class="text-xs font-bold uppercase tracking-widest" style="color: #6366F1;">Engagement</span>
+        <span class="text-slate-900 font-extrabold" style="font-size: 2rem; line-height: 1;">3–5×</span>
+        <p class="text-slate-600 text-xs leading-relaxed">Higher retention from real-time likes, comments, and DMs vs static, algorithmic feeds</p>
+      </div>
+
+      <div class="flex flex-col gap-2 rounded-2xl p-5 border" style="background: #F5F3FF; border-color: #DDD6FE;">
+        <span class="text-xs font-bold uppercase tracking-widest" style="color: #8B5CF6;">Time-to-Post</span>
+        <span class="text-slate-900 font-extrabold" style="font-size: 2rem; line-height: 1;">&lt;30s</span>
+        <p class="text-slate-600 text-xs leading-relaxed">From camera roll to live post with Firebase Storage's optimised upload pipeline</p>
+      </div>
+
+      <div class="flex flex-col gap-2 rounded-2xl p-5 border" style="background: #ECFDF5; border-color: #A7F3D0;">
+        <span class="text-xs font-bold uppercase tracking-widest" style="color: #10B981;">Platform Cost</span>
+        <span class="text-slate-900 font-extrabold" style="font-size: 2rem; line-height: 1;">~$0</span>
+        <p class="text-slate-600 text-xs leading-relaxed">Firebase's free tier handles thousands of daily active users before billing begins</p>
+      </div>
+
+      <div class="flex flex-col gap-2 rounded-2xl p-5 border" style="background: #FFF1F2; border-color: #FECDD3;">
+        <span class="text-xs font-bold uppercase tracking-widest" style="color: #F43F5E;">Security</span>
+        <span class="text-slate-900 font-extrabold" style="font-size: 2rem; line-height: 1;">Battle-tested</span>
+        <p class="text-slate-600 text-xs leading-relaxed">Firebase Auth provides enterprise-grade secure authentication for every single user flow</p>
+      </div>
+
+    </div>
+
+    <!-- ROI summary band -->
+    <div class="flex-1 flex items-center rounded-2xl p-7 gap-8" style="background: #0F172A;">
+      <div class="flex flex-col gap-2 flex-1">
+        <span class="text-slate-400 text-xs font-bold tracking-widest uppercase">Why Firebase?</span>
+        <p class="text-white font-semibold text-base leading-relaxed">
+          Firestore, Storage, and Auth work as a unified serverless platform — you ship in days, scale automatically without re-architecture, and keep backend engineering costs near zero from day one through millions of users.
+        </p>
+      </div>
+      <div class="flex flex-col items-end gap-3 shrink-0">
+        <div class="flex flex-col items-end">
+          <span class="text-slate-400 text-xs font-semibold">Infrastructure overhead</span>
+          <span class="text-white font-extrabold text-2xl">Zero</span>
+        </div>
+        <div class="w-px h-10 bg-slate-700"></div>
+        <div class="flex flex-col items-end">
+          <span class="text-slate-400 text-xs font-semibold">Deploy platforms</span>
+          <span class="text-white font-extrabold text-2xl">Android + iOS</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
