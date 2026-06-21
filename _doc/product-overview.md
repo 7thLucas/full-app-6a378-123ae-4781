@@ -91,6 +91,6 @@ Clean, premium, editorial. The UI is inspired by Instagram's established interac
 
 1. **Originality over imitation** — draw on Instagram's proven UX patterns but differentiate meaningfully in visual design and feature framing
 2. **Performance first** — infinite scroll, lazy-loaded media, optimistic UI updates
-3. **Security by default** — Firebase Auth for all user flows; Storage rules limit access to authenticated users only
+3. **Security by default** — multi-layer identity verification (email, OTP, government ID), 2FA, AI-powered fake account detection, blue verified badges, and Firebase Auth for all user flows; Storage rules limit access to authenticated users only
 4. **Mobile-native feel** — every interaction should feel native on both Android and iOS, not like a mobile website
 5. **Scalable by design** — Firebase's serverless model handles growth from zero to thousands of daily active users without re-architecture
