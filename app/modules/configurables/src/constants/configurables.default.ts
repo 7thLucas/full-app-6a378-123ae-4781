@@ -64,67 +64,100 @@ export type TDefaultConfigurableData = {
   logoUrl: string;
   brandColor: TBrandColor;
   font: TFont;
-  // Mirror new schema fields here. Example:
-  //   maxItemsPerPage?: number;
-  //   enableNotifications?: boolean;
-  //   featuredCategories?: string[];
+  // Lumora-specific fields
+  tagline: string;
+  onboardingHeadline: string;
+  onboardingSubtext: string;
+  enableDarkMode: boolean;
+  enableStories: boolean;
+  enableReels: boolean;
+  enableDMs: boolean;
+  enableVoiceVideoCalls: boolean;
+  enableVerifiedBadge: boolean;
+  enableAIFakeDetection: boolean;
+  enableGovernmentIDVerification: boolean;
+  maxPostCaptionLength: number;
+  maxBioLength: number;
+  storyExpirationHours: number;
+  feedPostsPerPage: number;
+  reelsPerPage: number;
+  supportEmail: string;
+  footerText: string;
+  welcomeMessage: string;
 };
 
 export const defaultConfigurablesData: TDefaultConfigurableData = {
-  appName: "My App",
+  appName: "Lumora",
   logoUrl: "",
   brandColor: {
     // Base
     background:        "#ffffff",
-    foreground:        "#09090b",
+    foreground:        "#111827",
     // Card
-    card:              "#ffffff",
-    cardForeground:    "#09090b",
+    card:              "#f9fafb",
+    cardForeground:    "#111827",
     // Popover
     popover:           "#ffffff",
-    popoverForeground: "#09090b",
-    // Primary
-    primary:           "#2563eb",
+    popoverForeground: "#111827",
+    // Primary (Lumora Violet)
+    primary:           "#7C3AED",
     primaryForeground: "#ffffff",
     // Secondary
-    secondary:           "#f4f4f5",
-    secondaryForeground: "#18181b",
+    secondary:           "#f3f0ff",
+    secondaryForeground: "#7C3AED",
     // Muted
-    muted:           "#f4f4f5",
-    mutedForeground: "#71717a",
+    muted:           "#f9fafb",
+    mutedForeground: "#6B7280",
     // Accent
-    accent:           "#f4f4f5",
-    accentForeground: "#18181b",
+    accent:           "#4F46E5",
+    accentForeground: "#ffffff",
     // Destructive
-    destructive:           "#ef4444",
-    destructiveForeground: "#fafafa",
+    destructive:           "#EF4444",
+    destructiveForeground: "#ffffff",
     // Border / Input / Ring
-    border: "#e4e4e7",
-    input:  "#e4e4e7",
-    ring:   "#2563eb",
+    border: "#E5E7EB",
+    input:  "#E5E7EB",
+    ring:   "#7C3AED",
     // Charts
-    chart1: "#f97316",
-    chart2: "#0d9488",
-    chart3: "#1e3a5f",
-    chart4: "#d4a017",
-    chart5: "#ea580c",
+    chart1: "#7C3AED",
+    chart2: "#4F46E5",
+    chart3: "#06B6D4",
+    chart4: "#10B981",
+    chart5: "#F59E0B",
     // Navbar
     navbarBackground: "#ffffff",
     // Sidebar
-    sidebarBackground:        "#fafafa",
-    sidebarForeground:        "#3f3f46",
-    sidebarPrimary:           "#2563eb",
+    sidebarBackground:        "#f9fafb",
+    sidebarForeground:        "#111827",
+    sidebarPrimary:           "#7C3AED",
     sidebarPrimaryForeground: "#ffffff",
-    sidebarAccent:            "#f4f4f5",
-    sidebarAccentForeground:  "#18181b",
-    sidebarBorder:            "#e4e4e7",
-    sidebarRing:              "#2563eb",
+    sidebarAccent:            "#f3f0ff",
+    sidebarAccentForeground:  "#7C3AED",
+    sidebarBorder:            "#E5E7EB",
+    sidebarRing:              "#7C3AED",
   },
   font: {
-    headingFont: "Plus Jakarta Sans",
+    headingFont: "Outfit",
     textFont: "Inter",
   },
-  // ─────────────────────────────────────────────────────────────────────
-  // Add new field defaults here. See RULES.md §5 for per-type shape.
-  // ─────────────────────────────────────────────────────────────────────
+  // Lumora-specific defaults
+  tagline: "Your world, beautifully connected.",
+  onboardingHeadline: "Welcome to Lumora",
+  onboardingSubtext: "Share moments. Discover creators. Build your story.",
+  enableDarkMode: true,
+  enableStories: true,
+  enableReels: true,
+  enableDMs: true,
+  enableVoiceVideoCalls: true,
+  enableVerifiedBadge: true,
+  enableAIFakeDetection: true,
+  enableGovernmentIDVerification: true,
+  maxPostCaptionLength: 2200,
+  maxBioLength: 150,
+  storyExpirationHours: 24,
+  feedPostsPerPage: 12,
+  reelsPerPage: 10,
+  supportEmail: "support@lumora.app",
+  footerText: "© 2026 Lumora. All rights reserved.",
+  welcomeMessage: "Welcome to Lumora! Start sharing your world.",
 };

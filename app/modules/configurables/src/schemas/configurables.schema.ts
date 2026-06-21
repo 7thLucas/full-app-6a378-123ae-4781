@@ -46,6 +46,47 @@ export const configurableSchemas: ConfigurableSchemas = {
       label: "Logo URL",
     },
     {
+      fieldName: "tagline",
+      type: "string",
+      required: false,
+      label: "App Tagline",
+      maxLength: 120,
+    },
+    {
+      fieldName: "onboardingHeadline",
+      type: "string",
+      required: false,
+      label: "Onboarding Headline",
+      maxLength: 80,
+    },
+    {
+      fieldName: "onboardingSubtext",
+      type: "string",
+      required: false,
+      label: "Onboarding Subtext",
+      maxLength: 160,
+    },
+    {
+      fieldName: "welcomeMessage",
+      type: "string",
+      required: false,
+      label: "Welcome Message",
+      maxLength: 200,
+    },
+    {
+      fieldName: "supportEmail",
+      type: "string",
+      required: false,
+      label: "Support Email",
+    },
+    {
+      fieldName: "footerText",
+      type: "string",
+      required: false,
+      label: "Footer Text",
+      maxLength: 120,
+    },
+    {
       fieldName: "brandColor",
       type: "object",
       required: true,
@@ -171,5 +212,22 @@ export const configurableSchemas: ConfigurableSchemas = {
         },
       ],
     },
+
+    // ── Feature Flags ──────────────────────────────────────────────────────
+    { fieldName: "enableDarkMode",                 type: "boolean", required: false, label: "Enable Dark Mode Toggle" },
+    { fieldName: "enableStories",                  type: "boolean", required: false, label: "Enable Stories Feature" },
+    { fieldName: "enableReels",                    type: "boolean", required: false, label: "Enable Reels Feature" },
+    { fieldName: "enableDMs",                      type: "boolean", required: false, label: "Enable Direct Messaging" },
+    { fieldName: "enableVoiceVideoCalls",           type: "boolean", required: false, label: "Enable Voice & Video Calls" },
+    { fieldName: "enableVerifiedBadge",            type: "boolean", required: false, label: "Enable Verified Badge System" },
+    { fieldName: "enableAIFakeDetection",          type: "boolean", required: false, label: "Enable AI Fake Account Detection" },
+    { fieldName: "enableGovernmentIDVerification", type: "boolean", required: false, label: "Enable Government ID Verification" },
+
+    // ── App Logic Parameters ───────────────────────────────────────────────
+    { fieldName: "maxPostCaptionLength", type: "number", required: false, label: "Max Post Caption Length", min: 50, max: 5000 },
+    { fieldName: "maxBioLength",         type: "number", required: false, label: "Max Bio Length", min: 30, max: 500 },
+    { fieldName: "storyExpirationHours", type: "number", required: false, label: "Story Expiration (hours)", min: 1, max: 72 },
+    { fieldName: "feedPostsPerPage",     type: "number", required: false, label: "Feed Posts Per Page", min: 4, max: 50 },
+    { fieldName: "reelsPerPage",         type: "number", required: false, label: "Reels Per Page", min: 3, max: 30 },
   ],
 };
