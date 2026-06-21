@@ -2,7 +2,7 @@
 
 ## Product Identity
 
-**Name**: TBD (to be confirmed during onboarding)
+**Name**: GlowUp
 **Type**: Social media mobile application
 **Platforms**: Android & iOS (responsive)
 **Tech Stack**: Firebase Authentication · Firestore · Firebase Storage
@@ -11,15 +11,15 @@
 
 ## Positioning
 
-A premium, original social media platform for photo and video sharing — inspired by Instagram's interaction patterns but built with a distinct visual identity. The product targets everyday creators and social users who want a clean, fast, beautifully designed space to share moments, build an audience, and connect directly with the people they care about.
+GlowUp is a premium social media platform built for the beauty, lifestyle, and self-improvement community — the people documenting and celebrating their glow up journey. Inspired by Instagram's proven interaction patterns, GlowUp expresses a fully original visual identity: warm, aspirational, and creator-forward. It gives this audience a clean, fast, beautifully designed space to share photos and videos, build a following, and connect directly with the people who inspire them.
 
 ---
 
 ## Target Users
 
-- **Content creators**: people who regularly share photos and short videos and want a polished canvas for their work
-- **Social connectors**: users primarily motivated by following friends, reacting to posts, and messaging people they know
-- **Explorers**: discovery-oriented users who browse hashtags, search new creators, and engage with trending content
+- **Glow-up creators**: beauty, fashion, fitness, and lifestyle content makers who want a polished, premium canvas for their transformation journey
+- **Inspiration seekers**: users who follow creators, react to posts, and draw motivation from the community's progress
+- **Explorers**: discovery-oriented users who browse hashtags, find new creators, and engage with trending self-improvement content
 
 ---
 
