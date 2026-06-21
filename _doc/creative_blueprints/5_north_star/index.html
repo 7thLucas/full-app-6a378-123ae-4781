@@ -1,0 +1,121 @@
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="flex flex-col w-full h-full p-12 gap-6">
+
+    <!-- Header -->
+    <div class="flex items-start justify-between">
+      <div class="flex flex-col gap-2">
+        <div class="flex items-center gap-3">
+          <div class="w-1 h-7 rounded-full" style="background: linear-gradient(180deg, #F59E0B, #F43F5E);"></div>
+          <span class="text-slate-400 text-xs font-bold tracking-widest uppercase">North Star</span>
+        </div>
+        <h2 class="text-slate-900 font-bold" style="font-size: 1.75rem;">Weekly Verified Operations</h2>
+      </div>
+      <span class="px-3 py-1.5 rounded-full text-xs font-bold border" style="background: #FFFBEB; color: #92400E; border-color: #FDE68A;">Projected impact — based on your inputs</span>
+    </div>
+
+    <!-- Operations identified -->
+    <div class="flex gap-4">
+      <div class="flex items-center gap-3 px-4 py-3 rounded-xl border flex-1" style="background: #EEF2FF; border-color: #C7D2FE;">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style="background: #6366F1;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="3"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-slate-900 font-bold text-sm">Post Published</p>
+          <p class="text-slate-500 text-xs">Photo or video successfully published to the feed by a user</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 px-4 py-3 rounded-xl border flex-1" style="background: #F5F3FF; border-color: #DDD6FE;">
+        <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0" style="background: #8B5CF6;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-slate-900 font-bold text-sm">Message Delivered</p>
+          <p class="text-slate-500 text-xs">A direct message successfully sent between two users</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formula + projection -->
+    <div class="flex gap-4 flex-1">
+
+      <!-- Left: arithmetic -->
+      <div class="flex flex-col gap-4 flex-1 rounded-2xl p-6 border border-slate-200">
+        <p class="text-slate-700 font-semibold text-sm">Weekly projection — fill in your numbers</p>
+
+        <div class="flex flex-col gap-3">
+          <!-- Row: MAU -->
+          <div class="flex items-center justify-between gap-3 py-2 border-b border-slate-100">
+            <span class="text-slate-600 text-xs">Monthly Active Users (MAU)</span>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold border" style="background: #FFFBEB; color: #92400E; border-color: #FDE68A;">
+              500 — Assumption, adjust this
+            </span>
+          </div>
+          <!-- Row: Posts -->
+          <div class="flex items-center justify-between gap-3 py-2 border-b border-slate-100">
+            <span class="text-slate-600 text-xs">% of MAU posting each week</span>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold border" style="background: #FFFBEB; color: #92400E; border-color: #FDE68A;">
+              25% — Assumption, adjust this
+            </span>
+          </div>
+          <!-- Row: Posts calc -->
+          <div class="flex items-center justify-between gap-3 py-2 border-b border-slate-100">
+            <span class="text-slate-600 text-xs">Posts published / week</span>
+            <span class="text-slate-900 font-bold text-sm">500 × 25% = <span style="color: #6366F1;">125 posts/wk</span></span>
+          </div>
+          <!-- Row: DM -->
+          <div class="flex items-center justify-between gap-3 py-2 border-b border-slate-100">
+            <span class="text-slate-600 text-xs">% of MAU messaging each week</span>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold border" style="background: #FFFBEB; color: #92400E; border-color: #FDE68A;">
+              35% — Assumption, adjust this
+            </span>
+          </div>
+          <!-- Row: DM calc -->
+          <div class="flex items-center justify-between gap-3 py-2 border-b border-slate-100">
+            <span class="text-slate-600 text-xs">Messages delivered / week</span>
+            <span class="text-slate-900 font-bold text-sm">500 × 35% = <span style="color: #8B5CF6;">175 msgs/wk</span></span>
+          </div>
+          <!-- Row: WVO total -->
+          <div class="flex items-center justify-between gap-3 py-2">
+            <span class="text-slate-800 font-bold text-sm">Total WVO</span>
+            <span class="text-slate-900 font-extrabold text-base">125 + 175 = <span style="color: #F43F5E;">300 ops/week</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: value projection -->
+      <div class="flex flex-col gap-4 rounded-2xl p-6 border border-slate-200" style="min-width: 220px;">
+        <p class="text-slate-700 font-semibold text-sm">Estimated value</p>
+        <div class="flex flex-col gap-3">
+          <div class="py-2 border-b border-slate-100">
+            <p class="text-slate-500 text-xs">Ad ARPU / MAU / month</p>
+            <p class="text-slate-900 font-bold text-sm mt-0.5">
+              $2.00
+              <span class="inline-flex items-center px-1.5 py-0.5 rounded-full text-xs font-semibold ml-1" style="background: #FFFBEB; color: #92400E; border: 1px solid #FDE68A;">Assumption</span>
+            </p>
+          </div>
+          <div class="py-2 border-b border-slate-100">
+            <p class="text-slate-500 text-xs">Monthly platform revenue</p>
+            <p class="text-slate-900 font-bold text-sm mt-0.5">500 × $2 = <span style="color:#6366F1;">$1,000/mo</span></p>
+          </div>
+          <div class="py-2 border-b border-slate-100">
+            <p class="text-slate-500 text-xs">Weekly revenue</p>
+            <p class="text-slate-900 font-bold text-sm mt-0.5">$1,000 ÷ 4 ≈ <span style="color:#8B5CF6;">$250/wk</span></p>
+          </div>
+          <div class="py-3 rounded-xl flex flex-col items-center" style="background: #0F172A;">
+            <span class="text-slate-400 text-xs font-semibold uppercase tracking-wide mb-1">Annual projection</span>
+            <span class="text-white font-extrabold" style="font-size: 1.5rem; line-height: 1;">$12,000 / yr</span>
+            <span class="text-slate-400 text-xs mt-1">($250/wk × 52 wks)</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
