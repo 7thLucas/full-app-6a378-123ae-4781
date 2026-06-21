@@ -1,0 +1,62 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-left { width: 50%; }
+  .mode-landscape .sl-right { width: 50%; }
+  .mode-portrait .sl-left { width: 100%; flex: 1; }
+  .mode-portrait .sl-right { display: none; }
+</style>
+<section class="w-full h-full bg-white overflow-auto">
+  <div class="sl-layout flex w-full h-full">
+
+    <!-- Left: Editorial content panel -->
+    <div class="sl-left bg-slate-900 flex flex-col justify-between p-12">
+
+      <!-- Top: Brand mark -->
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center" style="background: linear-gradient(135deg, #6366F1, #8B5CF6);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1.2" fill="white" stroke="none"/>
+          </svg>
+        </div>
+        <span class="text-indigo-300 text-xs font-bold tracking-widest uppercase">Social Platform</span>
+      </div>
+
+      <!-- Middle: Hero copy -->
+      <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-3">
+          <div class="w-10 h-1 rounded-full" style="background: linear-gradient(90deg, #6366F1, #8B5CF6);"></div>
+          <h1 class="text-white font-extrabold leading-tight tracking-tight" style="font-size: 2.8rem;">
+            Connect.<br/>Share.<br/>Belong.
+          </h1>
+        </div>
+        <p class="text-slate-300 text-base leading-relaxed" style="max-width: 22rem;">
+          A premium, original social media experience — photo &amp; video sharing, real connections, and a design that stands entirely apart.
+        </p>
+        <div class="flex flex-wrap items-center gap-2 mt-1">
+          <span class="px-3 py-1 text-xs font-semibold rounded-full border" style="background: rgba(99,102,241,0.15); color: #a5b4fc; border-color: rgba(99,102,241,0.3);">Firebase-Powered</span>
+          <span class="px-3 py-1 text-xs font-semibold rounded-full border" style="background: rgba(139,92,246,0.15); color: #c4b5fd; border-color: rgba(139,92,246,0.3);">Android &amp; iOS</span>
+          <span class="px-3 py-1 text-xs font-semibold rounded-full border" style="background: rgba(244,63,94,0.15); color: #fda4af; border-color: rgba(244,63,94,0.3);">Dark Mode</span>
+        </div>
+      </div>
+
+      <!-- Bottom: Attribution -->
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: Visual anchor -->
+    <div class="sl-right relative overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=premium+social+media+mobile+app+on+smartphone+photo+grid+feed+clean+modern+UI+soft+purple+indigo+gradient+background+editorial+lifestyle+photography+minimal+design+floating+device+mockup"
+        alt="Social media app preview"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 pointer-events-none" style="background: linear-gradient(to right, rgba(15,23,42,0.15), transparent);"></div>
+    </div>
+
+  </div>
+</section>
