@@ -30,6 +30,17 @@ A premium, original social media platform for photo and video sharing — inspir
 - Personal profile page: profile picture, bio, post grid
 - Secure session management and token handling
 
+### Identity Verification & Trust
+- Multi-tier account verification: email, mobile number (OTP), and government ID (required for creators and public profiles)
+- Blue verified badge system for confirmed identities
+- AI-powered fake account and bot detection
+- Two-Factor Authentication (2FA) on all accounts
+- Login alerts for sign-ins from new or unrecognised devices
+- Account recovery via email and phone number
+- Manual review process for high-profile accounts
+- Community reporting system for impersonation and fake profiles
+- **Platform goal**: a trusted space where users can verify identities and where spam, bots, and fake profiles are actively suppressed
+
 ### Content Sharing
 - Photo and video upload to Firebase Storage
 - Post composition with caption and hashtag support
